@@ -1,0 +1,17 @@
+{
+  "name": "99_node_redis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "redis": "^2.8.0",
+    "util": "^0.11.1"
+  }
+}

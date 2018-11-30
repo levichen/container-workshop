@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+    app:
+        build: .
+        depends_on:
+        - redis
+        links:
+        - redis
+        environment:
+        - REDIS_HOST=redis
+        ports:
+        - "3000:3000"
+
+    redis:
+        image: redis:2.8.19
+        ports:
+        - "6379:6379"
